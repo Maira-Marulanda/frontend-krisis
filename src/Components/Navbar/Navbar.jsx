@@ -1,22 +1,25 @@
 
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import './Navbar.css'; 
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex items-center justify-between px-6 py-4 bg-white shadow-md">
+    <nav className="custom-navbar">
       {/* Logo */}
-      <div className="flex items-center">
-        <img src="../../public/NODO.png" alt="Logo" className="h-10 w-auto" />
+      <div className="container-navbar">
+        <img src="../../public/NODO.png" alt="Logo" className="logo-navbar" />
       </div>
 
       {/* Menu */}
-      <ul className="flex gap-8 text-gray-800 text-lg font-medium">
-        <li><a href="#inicio" className="hover:text-blue-500">Inicio</a></li>
-        <li><a href="#servicios" className="hover:text-blue-500">Servicios</a></li>
-        <li><a href="#nosotros" className="hover:text-blue-500">Nosotros</a></li>
-        <li><a href="#contacto" className="hover:text-blue-500">Contacto</a></li>
-      </ul>
+      <div  class="navbar-menu" id="navbarMenu" >
+        <ul className="navbar-nav">
+            <li><a href="#inicio" className="nav-inicio">Inicio</a></li>
+            <li><a href="#servicios" className="nav-servicios">Servicios</a></li>
+            <li><a href="#nosotros" className="nav-nosotros">Nosotros</a></li>
+            <li><a href="#contacto" className="nav-contacto">Contacto</a></li>
+        </ul>
+      </div>
 
       {/* Redes sociales */}
       <div className="flex gap-4 text-blue-600 text-xl">
